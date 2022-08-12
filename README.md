@@ -1,2 +1,2 @@
 # Personal
-Host My Personal Websites
+My Projects Details
