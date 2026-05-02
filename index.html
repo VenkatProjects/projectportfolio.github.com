@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Personal Portfolio</title>
+    <title>Venkatesan - Sr Cloud Platform Engineer</title>
 </head>
 <body>
     <link
   rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+  integrity="sha384-3B6F6rrU1e/wv3gnlCznzcajptFOxW64u07ZcrPJz39txvudN2747X4DkmRLQsf"
   crossorigin="anonymous"
 />
 <link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@700&display=swap"
   rel="stylesheet"
 />
-<link
-  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-  rel="stylesheet"
-/>
-<!-- START NAV -->
 
+<!-- START NAV -->
 <nav id="navbar" class="nav">
+  <div class="nav-brand">
+    <span class="brand-icon">&lt;VK /&gt;</span>
+  </div>
   <ul class="nav-list">
     <li>
-      <a href="#welcome-section">About</a>
+      <a href="#welcome-section" class="nav-link">About</a>
     </li>
     <li>
-      <a href="#projects">Work</a>
+      <a href="#skills" class="nav-link">Skills</a>
     </li>
     <li>
-      <a href="#contact">Contact</a>
+      <a href="#projects" class="nav-link">Work</a>
+    </li>
+    <li>
+      <a href="#contact" class="nav-link">Contact</a>
     </li>
   </ul>
 </nav>
@@ -40,177 +42,263 @@
 <!-- END NAV -->
 
 <!-- START WELCOME SECTION -->
-
 <section id="welcome-section" class="welcome-section">
-  <h1>Hey I am Venkatesan </h1>
-  <p>as Sr Cloud Platform</p>
-  <p>I have 10+ years experience </p>
+  <div class="welcome-content">
+    <div class="welcome-text">
+      <span class="greeting-subtitle">Welcome to my portfolio</span>
+      <h1 class="welcome-title">Venkatesan</h1>
+      <p class="welcome-role">Sr Cloud Platform Engineer</p>
+      <p class="welcome-bio">Building scalable cloud solutions with 10+ years of expertise in cloud architecture, DevOps, and platform engineering.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#projects" class="btn btn-secondary">View My Work</a>
+      </div>
+    </div>
+    <div class="welcome-visual">
+      <div class="floating-card card-1"></div>
+      <div class="floating-card card-2"></div>
+      <div class="floating-card card-3"></div>
+    </div>
+  </div>
 </section>
 
 <!-- END WELCOME SECTION -->
 
-<!-- START PROJECTS SECTION -->
+<!-- START SKILLS SECTION -->
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+      <h3>Cloud Platforms</h3>
+      <p>AWS, Azure</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-cube"></i></div>
+      <h3>Kubernetes</h3>
+      <p>Container Orchestration</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+      <h3>DevOps</h3>
+      <p>CI/CD, Terraform, Ansible</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-code"></i></div>
+      <h3>Programming</h3>
+      <p>Python, JavaScript, Bash</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+      <h3>Security</h3>
+      <p>Infrastructure Security</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Monitoring</h3>
+      <p>CloudWatch, ELK</p>
+    </div>
+  </div>
+</section>
 
+<!-- END SKILLS SECTION -->
+
+<!-- START PROJECTS SECTION -->
 <section id="projects" class="projects-section">
-  <h2 class="projects-section-header">These are some of my projects</h2>
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-subtitle">Explore some of my recent work and side projects</p>
 
   <div class="projects-grid">
     <a
       href="https://codepen.io/vennkatesank/full/RwaobQW"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Tribute Page
-        <span class="code"><&#47;&gt;></span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="Tribute Page Project"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">Web Design</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">Tribute Page</p>
+        <p class="project-desc">Beautiful responsive tribute page showcasing modern web design</p>
+      </div>
     </a>
     <a
       href="https://codepen.io/vennkatesank/full/XWdNbvQ"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1535850452425-140ee4a8dbae?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Resturant Survey Form
-        <span class="code">&#47;&gt;</span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1535850452425-140ee4a8dbae?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="Restaurant Survey Form"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">Frontend</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">Restaurant Survey Form</p>
+        <p class="project-desc">Interactive form with validation and responsive design</p>
+      </div>
     </a>
     <a
       href="https://codepen.io/vennkatesank/full/vYGyJoP"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1583516658104-f46d2503e2df?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Technical Documentation Page 
-        <span class="code">&#47;&gt;</span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1583516658104-f46d2503e2df?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="Technical Documentation"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">Documentation</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">Technical Documentation</p>
+        <p class="project-desc">Comprehensive API documentation with live examples</p>
+      </div>
     </a>
     <a
       href="https://codepen.io/vennkatesank/full/jOqyMPR"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1580796726313-7b2861e4a38b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Javascript-Photoapp
-        <span class="code">&#47;&gt;</span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1580796726313-7b2861e4a38b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="JavaScript Photo App"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">JavaScript Photo App</p>
+        <p class="project-desc">Dynamic photo gallery with advanced filtering</p>
+      </div>
     </a>
     <a
       href="https://codepen.io/vennkatesank/full/KKzagVL"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1561148459-88829d2704f5?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Quick Tip
-        <span class="code">&#47;&gt;</span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1561148459-88829d2704f5?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="Quick Tip App"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">React</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">Quick Tip Calculator</p>
+        <p class="project-desc">Handy utility for calculating tips instantly</p>
+      </div>
     </a>
     <a
       href="https://codepen.io/vennkatesank/full/LYNxRZy"
       target="_blank"
-      class="project project-tile"
+      class="project-card"
     >
-      <img
-        class="project-image"
-        src="https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Drum Kit
-        <span class="code">&#47;&gt;</span>
-      </p>
+      <div class="project-image-container">
+        <img
+          class="project-image"
+          src="https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          alt="Drum Kit"
+        />
+        <div class="project-overlay">
+          <span class="project-badge">Interactive</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-title">Interactive Drum Kit</p>
+        <p class="project-desc">Play drums with keyboard or mouse clicks</p>
+      </div>
     </a>
   </div>
 
-  <a
-    href="https://codepen.io/vennkatesank"
-    class="btn btn-show-all"
-    target="_blank"
-    >Show all<i class="fas fa-chevron-right"></i
-  ></a>
+  <div class="view-more">
+    <a
+      href="https://codepen.io/vennkatesank"
+      class="btn btn-explore"
+      target="_blank"
+      >Explore More Projects <i class="fas fa-arrow-right"></i
+    ></a>
+  </div>
 </section>
 
 <!-- END PROJECTS SECTION -->
 
 <!-- START CONTACT SECTION -->
-
 <section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>You can find me here!</h2>
-    <!-- <p>How do you take your coffee?</p> -->
-  </div>
-  <div class="contact-links">
-    <!-- <a
-      href="https://facebook.com/venkatesan"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-facebook-square"></i> Facebook</a
-    > -->
-    <a
-      id="profile-link"
-      href="https://github.com/VenkatProjects"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-github"></i> GitHub</a
-    >
-    <a
-      href="https://twitter.com/tech_twitts"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-twitter"></i> Twitter</a
-    >
-    <a href="mailto:esan@gmail.com" class="btn contact-details"
-      ><i class="fas fa-at"></i> Send a mail</a
-    >
-    <a href="tel:7502222130" class="btn contact-details"
-      ><i class="fas fa-mobile-alt"></i> Call me</a
-    >
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2>Let's Create Something Amazing</h2>
+      <p>I'm always interested in hearing about new projects and opportunities.</p>
+    </div>
+    
+    <div class="contact-links">
+      <a
+        id="profile-link"
+        href="https://github.com/VenkatProjects"
+        target="_blank"
+        class="contact-btn"
+        title="GitHub"
+      >
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <a
+        href="https://twitter.com/tech_twitts"
+        target="_blank"
+        class="contact-btn"
+        title="Twitter"
+      >
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a 
+        href="mailto:esan@gmail.com" 
+        class="contact-btn"
+        title="Email"
+      >
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a 
+        href="tel:7502222130" 
+        class="contact-btn"
+        title="Phone"
+      >
+        <i class="fas fa-phone"></i>
+        <span>Call</span>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- END CONTACT SECTION -->
 
 <!-- START FOOTER SECTION -->
-
 <footer>
-  <!-- <p>
-    **This is just a fake portfolio. All the projects and contact details given
-    are not real.
-  </p> -->
-  <p>
-    &copy; venkat 2025
-  </p>
+  <div class="footer-content">
+    <p>&copy; 2025 Venkatesan. All rights reserved.</p>
+    <p class="footer-note">Designed & Built with <span class="heart">♥</span></p>
+  </div>
 </footer>
 
 <!-- END FOOTER SECTION -->
