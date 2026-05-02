@@ -128,7 +128,7 @@ ul {
 .nav-list {
     display: flex;
     gap: 4rem;
-    align-items: center;
+    margin-left: auto;
 }
 
 .nav-link {
